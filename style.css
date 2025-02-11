@@ -79,7 +79,7 @@ button:hover {
 @media (max-width: 600px) {
     .container {
         padding: 15px;
-        max-width: 90%; /* Makes the container use more screen space */
+        max-width: 80%; /* Makes the container use more screen space */
     }
 
     h1 {
