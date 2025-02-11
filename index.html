@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Price Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- כותרת והסבר האתר -->
+  <header>
+    <h1>Weight Price Calculator</h1>
+    <p>
+     
+    </p>
+  </header>
+  
+  <!-- טופס החישוב -->
+  <main>
+    <form id="calculator-form">
+      <p>
+        If 
+        <input type="number" id="baseAmount" placeholder="1" step="1" class="small-input" value="1" required> 
+        kg of Product costs 
+        <input type="number" id="pricePerUnit" placeholder="50" step="1" value="50" required class="small-input">$,
+      </p>
+      <p>
+        how much does 
+        <input type="number" id="targetAmount" placeholder="2" step="1" class="small-input" value="2" required> 
+        kg of Product cost?
+      </p>
+      <button type="button" id="calculateButton">Calculate</button>
+    </form>
+    
+    <!-- תוצאה -->
+    <div id="result"></div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
