@@ -1,103 +1,126 @@
-/* עיצוב כללי */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #e0f7fa; /* שינוי צבע רקע */
-  color: #333;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center all text */
+    background-color: #e0f7fa; /* Soft blue background */
+    margin: 0;
+    padding: 0;
 }
 
-/* כותרת */
+/* Style for header */
 header {
-    width: 50%; /* Half of the screen width */
-    margin: 0 auto; /* Centers the header horizontally */
-    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
-    text-align: center; /* Centers the text inside */
-    border-radius: 10px; /* Optional: Rounded corners */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* עיצוב חלק מרכזי */
+/* Center form */
 main {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 500px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #4CAF50; /* שינוי מסגרת לירוק */
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4CAF50;
+    text-align: center; /* Centers everything inside the form */
 }
 
-/* עיצוב הטקסט והקלט */
-p {
-  font-size: 18px;
-  line-height: 1.6;
+/* Center all inputs & text */
+.input-group {
+    display: flex;
+    align-items: center; /* Keeps items aligned properly */
+    justify-content: center; /* Moves inputs & text to the center */
+    gap: 5px; /* Reduce space between elements */
+    margin-bottom: 5px; /* Reduce space between lines */
 }
 
-input {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 5px;
-  border: 2px solid #ccc; /* שינוי עובי מסגרת */
-  border-radius: 4px;
-  width: auto;
-  background-color: #f9f9f9; /* שינוי צבע רקע קלט */
-}
-
-/* שדות קטנים */
+/* Style for inputs */
 .small-input {
-  width: 50px;
+    width: 90px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
 }
 
+/* Center the paragraph text */
+p {
+    text-align: center; /* Centers the text */
+    margin: 0;
+}
+
+/* Button styling */
 button {
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #4CAF50; /* שינוי צבע הכפתורים לירוק */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
 }
 
 button:hover {
-  background-color: #45a049; /* גוון ירוק כהה יותר */
+    background-color: #45a049;
 }
 
-/* תוצאה */
+/* Result styling */
 #result {
-    background-color: #e8f4e8; /* צבע רקע ייחודי להשוואות */
-    padding: 10px;
+    background-color: #e8f4e8;
+    padding: 8px;
     border-radius: 6px;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 8px;
+    font-size: 14px;
 }
 
-
-
-/* התאמת עיצוב למסכים קטנים (כמו פלאפונים) */
+/* ✅ Mobile-Friendly Fix - Reduce Spacing */
 @media (max-width: 600px) {
-    .calculator {
-        padding: 20px;
-        max-width: 80%;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .section p {
-        font-size: 1em;
-    }
-
-    input[type="number"] {
-        width: 80px;
-        font-size: 0.9em;
-    }
-
-    .result {
-        font-size: 1em;
+    header {
+        width: 80%;
         padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    main {
+        max-width: 95%;
+        padding: 12px;
+    }
+
+    .input-group {
+        gap: 3px; /* Even less space between elements */
+        margin-bottom: 3px;
+    }
+
+    .small-input {
+        width: 80px;
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    #result {
+        font-size: 0.9rem;
+        padding: 6px;
+        margin-top: 6px;
     }
 }
