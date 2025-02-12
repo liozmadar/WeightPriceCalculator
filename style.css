@@ -88,7 +88,7 @@ button:hover {
 /* ✅ Mobile-Friendly Fix - Reduce Width on Small Screens */
 @media (max-width: 600px) {
     header {
-        width: 80%;
+        width: 60%;
         padding: 8px;
         margin-bottom: 8px;
     }
