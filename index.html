@@ -10,31 +10,42 @@
   <!-- כותרת והסבר האתר -->
   <header>
     <h1>Weight Price Calculator</h1>
-    <p>
-     
-    </p>
   </header>
   
   <!-- טופס החישוב -->
   <main>
     <form id="calculator-form">
-      <p>
-        If 
-        <input type="number" id="baseAmount" placeholder="1" step="1" class="small-input" value="1" required> 
-        kg of Product costs 
-        <input type="number" id="pricePerUnit" placeholder="50" step="1" value="50" required class="small-input">$,
-      </p>
-      <p>
-        how much does 
-        <input type="number" id="targetAmount" placeholder="2" step="1" class="small-input" value="2" required> 
-        kg of Product cost?
-      </p>
+      
+      <div class="input-group">
+        <p>If</p>
+        <input type="number" id="baseAmount" placeholder="1" step="1" class="small-input" value="1" required>
+        <p>kg</p>
+      </div>
+
+      <p class="left-align">of Product costs</p>
+
+      <div class="input-group">
+        <input type="number" id="pricePerUnit" placeholder="50" step="1" value="50" required class="small-input">
+        <p>$</p>
+      </div>
+
+      <p class="left-align">How much does</p>
+
+      <div class="input-group">
+        <input type="number" id="targetAmount" placeholder="2" step="1" class="small-input" value="2" required>
+        <p>kg</p>
+      </div>
+
+      <p class="left-align">of Product cost?</p>
+
       <button type="button" id="calculateButton">Calculate</button>
+
     </form>
-    
+
     <!-- תוצאה -->
     <div id="result"></div>
   </main>
+
 </body>
 <script src="script.js"></script>
 </html>
