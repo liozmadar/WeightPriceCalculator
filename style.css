@@ -95,7 +95,7 @@ button:hover {
 
     /* ✅ Reduce width of main content */
     main {
-        width: 60%; /* Reduce width to 80% of screen */
+        width: 100%; /* Reduce width to 80% of screen */
         padding: 10px;
     }
 
