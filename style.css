@@ -75,39 +75,29 @@ button:hover {
 }
 
 
+
 /* התאמת עיצוב למסכים קטנים (כמו פלאפונים) */
 @media (max-width: 600px) {
-    .container {
-        padding: 15px;
-        max-width: 90%; /* Makes the container use more screen space */
+    .calculator {
+        padding: 20px;
+        max-width: 80%;
     }
 
     h1 {
-        font-size: 1.8em; /* Slightly larger for readability */
-        width: 80%; /* Makes it look better on small screens */
+        font-size: 1.5em;
     }
 
-    .calculator-title {
-        font-size: 1.5rem; /* Smaller but still readable */
-        width: 80%; /* Makes it responsive */
-    }
-
-    p {
-        font-size: 1em; /* Ensures text is still readable */
-    }
-
-    input[type="number"] {
-        width: 100px; /* Slightly larger for easier typing */
+    .section p {
         font-size: 1em;
     }
 
-    button {
-        width: 100%; /* Makes the button full width */
-        padding: 12px; /* Increases touch area */
+    input[type="number"] {
+        width: 80px;
+        font-size: 0.9em;
     }
 
     .result {
-        font-size: 1.2em; /* Makes results clearer */
-        padding: 12px;
+        font-size: 1em;
+        padding: 8px;
     }
 }
