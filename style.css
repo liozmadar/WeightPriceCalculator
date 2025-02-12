@@ -83,7 +83,9 @@ button:hover {
     font-size: 14px;
 }
 
-/* ✅ Mobile-Friendly Fix - Reduce Spacing */
+
+
+/* ✅ Mobile-Friendly Fix - Reduce Width on Small Screens */
 @media (max-width: 600px) {
     header {
         width: 80%;
@@ -91,13 +93,14 @@ button:hover {
         margin-bottom: 8px;
     }
 
+    /* ✅ Reduce width of main content */
     main {
-        max-width: 95%;
-        padding: 12px;
+        max-width: 80%; /* Reduce width to 80% of screen */
+        padding: 10px;
     }
 
     .input-group {
-        gap: 3px; /* Even less space between elements */
+        gap: 3px;
         margin-bottom: 3px;
     }
 
